@@ -14,6 +14,7 @@ docker_cron_tasks:
     name: "Docker clean up"
     schedule: ["0", "0", "*", "*", "0"]
 
+docker_daemon_environment: []
 docker_daemon_options: []
 
 docker_apt_key: "9DC858229FC7DD38854AE2D88D81803C0EBFCD88"
@@ -21,3 +22,5 @@ docker_repository: "deb [arch=amd64] https://download.docker.com/linux/{{ ansibl
 docker_apt_package_name: "{{ docker_version }}~{{ docker_edition }}~3-0~{{ ansible_distribution | lower }}"
 
 docker_apt_cache_time: 86400
+
+docker_registries: []
